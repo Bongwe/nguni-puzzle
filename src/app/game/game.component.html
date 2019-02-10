@@ -1,0 +1,23 @@
+<div class = "row">
+    <div class="col-sm-12 col-md-12 text-center">
+        <countdown [config]="{leftTime: 20}" (finished)="gameOver()">$!m!:$!s!</countdown>
+    </div>
+</div>
+
+<div class="row" id="puzzle_box">
+    <div class="col-sm-8 col-md-6 offset-md-3">
+        <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+            <img width="100%" *ngFor="let piece of sortedPuzzlePieces" src={{piece}} cdkDrag>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class = "col-sm-2 offset-md-5 col-md-2 offset-md-5">
+        <a routerLink="/home">
+            <div class="play_link">
+                main menu
+            </div>
+        </a>
+    </div>
+</div> 

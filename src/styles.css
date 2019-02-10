@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'cowboy_hippie_proregular';
+    src: url('../src/assets/fonts/cowboy-hippie-pro/cowboy_hippie_pro.woff2') format('woff2'),
+         url('../src/assets/fonts/cowboy-hippie-pro/cowboy_hippie_pro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'air_americaregular';
+    src: url('../src/assets/fonts/air-america/airamerica-regular.woff2') format('woff2'),
+         url('../src/assets/fonts/air-america/airamerica-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+	background-color: #ffff;
+	color: white;
+	font-size: 30px;
+	text-align: left;
+    font-family: 'air_americaregular';
+    padding-left: 20px;
+}
+
+.container-fluid {
+	background-color: #ffff;
+	color: black;
+	font-size: 30px;
+	text-align: left;
+    font-family: 'air_americaregular';
+    padding-left: 60px;
+}
+
+#logo {
+	font-family: 'air_americaregular';
+	font-size: 50px;
+}
+
+.play_link {
+	background-color: #CC7D04;
+	text-align: center;
+}
+
+a{
+	color: black;
+}
